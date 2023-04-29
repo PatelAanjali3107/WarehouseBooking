@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="primeflex/primeflex.scss" />
+    </h:head>
+    <h:body>
+        <div class="card ui-fluid">
+            <h5>Basic</h5>
+            <p:chips />
+
+            <h5>Unique</h5>
+            <p:chips unique="true" max="3"/>
+
+            <h5>Paste (Comma separated)</h5>
+            <p:chips widgetVar="wgtPaste" addOnPaste="true" separator=","/>
+        </div>
+    </h:body>
+</html>
+
